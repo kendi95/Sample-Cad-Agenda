@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linerLayoutCadAgenda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActCadAgenda">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayouId"
+        android:layout_width="match_parent"
+        android:hint="Id"
+        android:layout_height="85dp"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtInputId"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutTitulo"
+        android:layout_width="match_parent"
+        android:hint="Título"
+        android:layout_height="85dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtInputTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtInputData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="datetime"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horas"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtInputHoras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:inputType="time"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição (Opcional)"
+        app:counterEnabled="true"
+        app:counterMaxLength="80"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtInputDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:inputType="textMultiLine"
+            android:textSize="12sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+</LinearLayout>
